@@ -1,0 +1,25 @@
+@use "src/color";
+@use "src/size";
+@use "src/fonts";
+
+.wrap {
+  width: size.$bp-tablet;
+  height: 100px;
+  background: color.$dark;
+  @media (max-width: size.$bp-tablet) {
+    width: size.$bp-tablet;
+  }
+  @media (max-width: size.$bp-mobile) {
+    width: 100%
+  }
+}
+
+.test {
+  width: 0;
+  @media (max-width: size.$bp-tablet) {
+    width: size.$bp-tablet;
+  }
+  @media (max-width: size.$bp-mobile) {
+    width: 100%
+  }
+}

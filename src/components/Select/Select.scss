@@ -1,0 +1,104 @@
+@use 'src/color';
+@use 'src/size';
+
+.select {
+  width: 100px;
+}
+
+.select_s input {
+  width: 16px !important;
+  height: 18px !important;
+  margin-right: 10px;
+}
+
+
+.select-value-wrap {
+  width: 97px;
+  cursor: pointer;
+  @media (max-width: size.$bp-mobile) {
+    width: 250px;
+}
+}
+
+.select-value-title {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #292929;
+}
+
+.select-value-subtitle {
+  font-family: Lato;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+
+.select-menu {
+  margin: 20px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #292929;
+}
+
+.select-values {
+  cursor: hover;
+}
+
+.select-indicator {
+  background-color: color.$white-two;
+}
+
+.select-value-text {
+  width: 105px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.select-option-checkbox {
+  cursor: pointer;
+}
+
+.select-option-label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.select-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31px;
+  height: 38px;
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.select-indicator_gray {
+  transform: rotate(180deg);
+  background-color: color.$white-two;
+}

@@ -1,0 +1,198 @@
+@use "src/color";
+@use "src/size";
+
+.plato-wrap {
+    display: flex;
+    justify-content: center;
+    background: color.$white-two;
+    padding: 9px 0 0 70px;
+    @media (max-width: size.$bp-tablet) {
+        padding: 9px 0 0 20px;
+    }
+    @media (max-width: size.$bp-mobile) {
+        padding: 11px 20px;
+    }
+}
+
+.plato-left {
+    width: 928px;
+    height: 100%;
+    background: transparent;
+    @media (max-width: size.$bp-tablet) {
+        width: 728px;
+    }
+    @media (max-width: size.$bp-mobile) {
+        width: 100%;
+    }
+}
+
+.plato-right {
+    width: 338px;
+    height: calc(100vh - 59px);
+    margin-left: 30px;
+    background-color: #eee;
+    @media (max-width: size.$bp-tablet) {
+        display: none;
+    }
+}
+
+.plato-title {
+    color: #3971c1;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    @media (max-width: size.$bp-mobile) {
+        font-size: 19px;
+    }
+}
+
+.plato-filters {
+    position: relative;
+    display: flex;
+    width: 751px;
+    padding: 20px 13px 20px 12px;
+    border-radius: 3px;
+    background-color: #eee;
+    box-sizing: border-box;
+    margin-top: 14px;
+    @media (max-width: size.$bp-tablet) {
+        width: 728px;
+        padding: 20px 13px 20px 12px;
+    }
+    @media (max-width: size.$bp-mobile) {
+        align-items: center;
+        flex-direction: column;
+        background-color: color.$white-four;
+        width: 290px;
+        padding: 0;
+    }
+}
+
+.plato-filters-triangle {
+    position: absolute;
+    top: -15px;
+    left: 141px;
+    @media (max-width: size.$bp-tablet) {
+        left: calc(100% - 60px);
+    }
+    @media (max-width: size.$bp-mobile) {
+        left: 54px;
+    }
+}
+
+.plato-select {
+    margin-left: 5px;
+    @media (max-width: size.$bp-mobile) {
+        margin: 0;
+    }
+}
+
+.plato-select-border {
+    @media (max-width: size.$bp-mobile) {
+        border-top: 1px solid color.$white-two;
+        border-bottom: 1px solid color.$white-two;
+    }
+}
+
+.plato-button {
+    width: 172px;
+    height: 40px;
+    margin: 0 0 0 5px;
+    padding: 12px 67px 12px 69px;
+    border-radius: 3px;
+    background-color: #3971c1;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: color.$white-four;
+    border: none;
+    cursor: pointer;
+}
+
+.plato-title-and-buttons {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: size.$bp-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media (max-width: size.$bp-mobile) {
+        flex-direction: column;
+    }
+}
+
+.plato-buttons {
+    display: flex;
+}
+.plato-button-filters {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    border: solid 1px #eee;
+    background-color: #eee;
+    margin-left: 6px;
+    border: none;
+    border-radius: 3px;
+    @media (max-width: size.$bp-mobile) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.plato-button-refresh {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    border: solid 1px color.$white;
+    background-color: color.$white-four;
+    border-radius: 3px;
+    @media (max-width: size.$bp-tablet) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.plato-button-name {
+    margin-left: 10px;
+}
+
+
+.plato-infinite-scroll {
+    height: 400px;
+    border: 1px solid red;
+    overflow: scroll;
+}
+
+.plato-article {
+    margin-bottom: 7px;
+}
+
+.plato-list {
+    margin-top: 20px;
+}
+
+.plato-button-name_refresh {
+    @media (max-width: size.$bp-tablet) {
+        display: none;
+    }
+}
+
+.plato-button-name_filters {
+    @media (max-width: size.$bp-mobile) {
+        display: none;
+    }
+}

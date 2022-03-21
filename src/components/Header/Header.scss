@@ -1,0 +1,60 @@
+@use "src/color";
+@use "src/size";
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 4px 20px;
+    box-sizing: border-box;
+    border: solid 1px color.$white-two;
+    background: color.$white-four;
+    @media (max-width: size.$bp-mobile) {
+        padding: 11px 20px;
+    }
+}
+
+.menu-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    @media (max-width: size.$bp-tablet) {
+        display: block;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: 5px;
+      }
+
+}
+
+.logo-wrap {
+    width: 90px;
+    height: 43px;
+    @media (max-width: size.$bp-tablet) {
+        width: 76px;
+        height: 36px;
+      }
+    @media (max-width: size.$bp-mobile) {
+        width: 70px;
+        height: 30px;
+    }
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: color.$dark;
+    @media (max-width: size.$bp-tablet) {
+        
+    }
+    @media (max-width: size.$bp-mobile) {
+    }
+}
